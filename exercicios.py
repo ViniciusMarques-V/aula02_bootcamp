@@ -1,14 +1,35 @@
+import  math
+
+
 # #### Inteiros (`int`)
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
+
+# numero1 = int(input("Digite um numero: "))
+# numero2 = int(input("Digite outro numero para soma: "))
+
+# soma = numero1 + numero2
+
+
+# print(f"O resultado da soma dos numero é: {soma}")
+
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
+
+# numero = float(input("Digite um numero: "))
+# calculo = numero % 5
+
+# print(f"O resto da divisao por 5 é: {calculo}")
+
+
+
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
-numero_1 = int(input("Digite o primeiro numero: "))
-numero_2 = int(input("Digite o segundo numero: "))
 
-resultado = numero // numero2
-print(f"O resultado intero da divisão é: {resultado}")
+# numero_1 = int(input("Digite o primeiro numero: "))
+# numero_2 = int(input("Digite o segundo numero: "))
+
+# resultado = numero_1 // numero_2
+# print(f"O resultado intero da divisão é: {resultado}")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
@@ -20,13 +41,32 @@ print(f"O resultado intero da divisão é: {resultado}")
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
+
+# raio = float(input("Digite o raio do circulo: "))
+# area_circulo = math.pi * raio ** 2
+
+# print (area_circulo)
+
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
-# 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+
+# data = input("Insira uma data no formato dd/mm/aaaa: ")
+# data_format = data.split("/")
+# dia = [data_format[0]]
+# mes = [data_format[1]]
+# ano = [data_format[2]]
+
+# print (f"A data digitada foi: {data_format}")
+
+# print (f"O dia digitado foi: {dia}")
+# print (f"O mes digitado foi: {mes}")
+# print (f"O ano digitado foi: {ano}")
+
+# 15. Escreva um programa que  concatene duas strings fornecidas pelo usuário.
 
 # #### Booleanos (`bool`)
 
@@ -39,7 +79,25 @@ print(f"O resultado intero da divisão é: {resultado}")
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+# try:
+#     celsius = float(input("Digite a tempuradora em celsius: "))
+#     fahrenheit = float((celsius * 9/5) +32)
+#     print (f"A temperatura em fahrenheit é: {fahrenheit}")
+# except ValueError:
+#     print ("Digite um valor valido né amigão: ")
+
+
 # 22: Verificador de Palíndromo
+
+
+valor = str(input("Digite alguma coisa ai: "))
+reverse = str(valor[::-1])
+
+if valor == reverse:
+    print(f"{valor}, é palindromo")
+else:
+    print(f"{valor}, não é um palindromo")
+
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
